@@ -13,5 +13,5 @@ interface FakerDAO {
     suspend fun addProduct(product: List<Product>)
 
     @Query("SELECT * from product")
-    suspend fun getProductList():List<Product>
+     fun getProductList(): List<Product>
 }
